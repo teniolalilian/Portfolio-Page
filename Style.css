@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+    height: 100vh;
+    margin-left: 100px;
+    padding: 5px;
+}
+/* the span color*/
+.color{
+    color: blue;
+}
+/* for portfolio text*/
+.header-container{
+    color: white;
+font-family: sans-serif;
+font-size: 30px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+letter-spacing: 2px;
+}
+/*for the nav bars/links*/
+nav{
+    text-align: right;
+    font-size: 15px;
+    word-spacing: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+/*this is the end of the header*/
+
+/*showcase container*/
+.showcase-container{
+    color: white;
+    font-family: sans-serif;
+    line-height: 0;
+    word-spacing: 3px;
+    padding-top: 200px;
+}
+#first{
+    font-size: 18px;
+    letter-spacing: 1px;
+
+}
+#second{
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: bold;
+
+}
+#third{
+    font-size: 30px;
+}
+button{
+    background-color: rgb(17, 17, 202);
+    color: white;
+    border: none;
+    width: 10%;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 3px;
+}
