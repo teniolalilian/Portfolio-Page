@@ -10,17 +10,23 @@
     <body>
         <header>
             <div class="header-container">
-            <p>Portfo<span class="color">lio.</span></p>
+                <p>Portfo<span class="color">lio.</span></p>
+                
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Teams</a>
+                    <a href="#">Content</a> 
+                </nav>
+                <div class="mobile-menu">
+                    <div class="line line-one"></div>
+                    <div class="line line-two"></div>
+                    <div class="line line-three"></div>
+                </div>
+            </div>
             
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Skills</a>
-                <a href="#">Teams</a>
-                <a href="#">Content</a> 
-            </nav>
-        </div>
     </header>
     <div class="showcase-container">
         <p id= "first">Hello, my name is</p>
@@ -29,4 +35,13 @@
         <button type="submit">Hire me</button>
     </div>
     </body>
+
+    <script>
+        const mobileMenu = document.querySelector('.mobile-menu')
+        const nav = document.querySelector('nav')
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active')
+        })
+    </script>
+
 </html>
