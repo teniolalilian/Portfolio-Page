@@ -1,7 +1,7 @@
 body{
     background-color: black;
     height: 100vh;
-    margin-left: 100px;
+    margin-left: 50px;
     padding: 5px;
 }
 /* the span color*/
@@ -61,4 +61,51 @@ button{
     font-size: 15px;
     padding: 10px;
     border-radius: 3px;
+}
+.mobile-menu {display: none;
+}
+
+@media (max-width: 829px) {
+    button {width: 15%;
+    }
+}
+
+@media (max-width: 529px) {
+    body {margin-left: 20px;
+    }
+    nav {display: none;
+         background-color: rgb(17, 17, 202);
+         display: flex;
+         flex-direction: column;
+         transform: translate(250px, 100px);
+         padding: 10px;
+         transition: .5s ease;
+         overflow: hidden;
+    }
+    nav a {text-align: center;
+    }
+    .mobile-menu {display: unset;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+    }
+    nav.active {transform: translate(0, 100px);
+                transition: .5s ease;
+    }
+    .line {width: 30px;
+           height: 3px;
+           background-color: rgb(17, 17, 202);
+           margin: 3px;
+           border-radius: 50px;
+    }
+    .showcase-container{padding-top: 30px;
+    }
+    #second {font-size: 40px;
+             letter-spacing: unset;
+    }
+    #third {font-size: 18px;
+    }
+    button {width: 30%;
+    }
 }
